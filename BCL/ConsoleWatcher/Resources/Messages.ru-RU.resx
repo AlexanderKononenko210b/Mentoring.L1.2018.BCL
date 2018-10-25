@@ -97,37 +97,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="File" xml:space="preserve">
-    <value>Файл</value>
-  </data>
-  <data name="was" xml:space="preserve">
-    <value>был</value>
-  </data>
-  <data name="created" xml:space="preserve">
-    <value>создан</value>
-  </data>
-  <data name="in" xml:space="preserve">
-    <value>в</value>
-  </data>
-  <data name="directory" xml:space="preserve">
-    <value>директории</value>
-  </data>
-  <data name="from" xml:space="preserve">
-    <value>из</value>
-  </data>
-  <data name="moved" xml:space="preserve">
-    <value>перенесен</value>
-  </data>
-  <data name="Filtered" xml:space="preserve">
-    <value>Отфильтрован</value>
-  </data>
-  <data name="EndAppInfo" xml:space="preserve">
+  <data name="EndAppInfoMessage" xml:space="preserve">
     <value>Для выхода из приложения нажмите Ctrl + C или Ctrl + break.</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>в</value>
+  <data name="FileDeleteMessage" xml:space="preserve">
+    <value>Файл {0} удален из {1} директории.</value>
   </data>
-  <data name="ExistFileInfo" xml:space="preserve">
-    <value>Файл с таким именем уже существует в отфильтрованной директории.</value>
+  <data name="FileCreatedMessage" xml:space="preserve">
+    <value>Файл {0} создан в {1} директории.</value>
+  </data>
+  <data name="FileFilteredMessage" xml:space="preserve">
+    <value>Файл {0} отфильтрован в {1} директорию.</value>
+  </data>
+  <data name="ExistFileInfoMessage" xml:space="preserve">
+    <value>Файл {0} уже существует в {1} директории.</value>
   </data>
 </root>

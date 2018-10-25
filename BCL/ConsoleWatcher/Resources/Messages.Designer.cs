@@ -61,101 +61,47 @@ namespace ConsoleWatcher.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to in.
-        /// </summary>
-        internal static string _in {
-            get {
-                return ResourceManager.GetString("in", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to created.
-        /// </summary>
-        internal static string created {
-            get {
-                return ResourceManager.GetString("created", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to directory.
-        /// </summary>
-        internal static string directory {
-            get {
-                return ResourceManager.GetString("directory", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to To exit the application, press Ctrl + C or Ctrl + break buttons..
         /// </summary>
-        internal static string EndAppInfo {
+        internal static string EndAppInfoMessage {
             get {
-                return ResourceManager.GetString("EndAppInfo", resourceCulture);
+                return ResourceManager.GetString("EndAppInfoMessage", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File with the same name already exist in filtered directory..
+        ///   Looks up a localized string similar to File {0} already exist in {1} directory..
         /// </summary>
-        internal static string ExistFileInfo {
+        internal static string ExistFileInfoMessage {
             get {
-                return ResourceManager.GetString("ExistFileInfo", resourceCulture);
+                return ResourceManager.GetString("ExistFileInfoMessage", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File.
+        ///   Looks up a localized string similar to File {0} is created in {1} directory..
         /// </summary>
-        internal static string File {
+        internal static string FileCreatedMessage {
             get {
-                return ResourceManager.GetString("File", resourceCulture);
+                return ResourceManager.GetString("FileCreatedMessage", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Filtered.
+        ///   Looks up a localized string similar to File {0} is deleted from {1} directory..
         /// </summary>
-        internal static string Filtered {
+        internal static string FileDeleteMessage {
             get {
-                return ResourceManager.GetString("Filtered", resourceCulture);
+                return ResourceManager.GetString("FileDeleteMessage", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to from.
+        ///   Looks up a localized string similar to File {0} filtered to {1} directory..
         /// </summary>
-        internal static string from {
+        internal static string FileFilteredMessage {
             get {
-                return ResourceManager.GetString("from", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to moved.
-        /// </summary>
-        internal static string moved {
-            get {
-                return ResourceManager.GetString("moved", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to to.
-        /// </summary>
-        internal static string to {
-            get {
-                return ResourceManager.GetString("to", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to was.
-        /// </summary>
-        internal static string was {
-            get {
-                return ResourceManager.GetString("was", resourceCulture);
+                return ResourceManager.GetString("FileFilteredMessage", resourceCulture);
             }
         }
     }

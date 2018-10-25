@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
     <Compile Include="Services\WatchersBuilder.cs" />
     <Compile Include="Configuration\CultureElement.cs" />
     <Compile Include="Configuration\DefaultOutputDirectoryElement.cs" />
@@ -57,12 +62,7 @@
     <Compile Include="Models\FileInfoEventArgs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Messages.Designer.cs">
-      <DependentUpon>Messages.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Services\Watcher.cs" />
+    <Compile Include="Services\WatcherManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

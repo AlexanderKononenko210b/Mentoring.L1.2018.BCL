@@ -10,9 +10,9 @@ using messages = ConsoleWatcher.Resources.Messages;
 namespace ConsoleWatcher.Services
 {
     /// <summary>
-    /// Represents a model <see cref="Watcher"/> class.
+    /// Represents a model <see cref="WatcherManager"/> class.
     /// </summary>
-    public sealed class Watcher
+    public sealed class WatcherManager
     {
         private readonly IWatchersBuilder _watchersBuilder;
         private readonly WatcherConfigurationSection _section;
@@ -20,11 +20,11 @@ namespace ConsoleWatcher.Services
         private int _currentNumber;
 
         /// <summary>
-        /// Initialize a new <see cref="Watcher"/> instance.
+        /// Initialize a new <see cref="WatcherManager"/> instance.
         /// </summary>
         /// <param name="watchersBuilder">The watchers builder.</param>
         /// <param name="section">The section info.</param>
-        public Watcher(IWatchersBuilder watchersBuilder, WatcherConfigurationSection section)
+        public WatcherManager(IWatchersBuilder watchersBuilder, WatcherConfigurationSection section)
         {
             _watchersBuilder = watchersBuilder;
             _section = section;
@@ -71,7 +71,7 @@ namespace ConsoleWatcher.Services
         /// <param name="arg">The <see cref="FileInfoEventArgs"/> arguments.</param>
         private void OnCreated(object sender, FileSystemEventArgs arg)
         {
-            Console.WriteLine($"{messages.File}: {arg.Name} {messages.was} {messages.created} {messages._in} {arg.FullPath} {messages.directory}.");
+            Console.WriteLine(messages.FileCreatedMessage, arg.Name, Path.GetDirectoryName(arg.FullPath));
 
             this.MoveFile(arg.FullPath);
         }
@@ -83,7 +83,7 @@ namespace ConsoleWatcher.Services
         /// <param name="arg">The <see cref="FileInfoEventArgs"/> arguments.</param>
         private void OnDeleted(object sender, FileSystemEventArgs arg)
         {
-            Console.WriteLine($"{messages.File}: {arg.Name} {messages.was} {messages.moved} {messages.from} {arg.FullPath} {messages.directory}.");
+            Console.WriteLine(messages.FileDeleteMessage, arg.Name, Path.GetDirectoryName(arg.FullPath));
         }
 
         #endregion
@@ -102,7 +102,7 @@ namespace ConsoleWatcher.Services
 
                     if (File.Exists(newFilePath))
                     {
-                        Console.WriteLine(messages.ExistFileInfo);
+                        Console.WriteLine(messages.ExistFileInfoMessage, Path.GetFileName(newFilePath), Path.GetDirectoryName(newFilePath));
                     }
                     else
                     {
