@@ -97,48 +97,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="File" xml:space="preserve">
-    <value>File</value>
-    <comment>File - word.</comment>
-  </data>
-  <data name="was" xml:space="preserve">
-    <value>was</value>
-    <comment>Was - word.</comment>
-  </data>
-  <data name="created" xml:space="preserve">
-    <value>created</value>
-    <comment>Type create file operation.</comment>
-  </data>
-  <data name="in" xml:space="preserve">
-    <value>in</value>
-    <comment>In - word.</comment>
-  </data>
-  <data name="directory" xml:space="preserve">
-    <value>directory</value>
-    <comment>Directory - word.</comment>
-  </data>
-  <data name="from" xml:space="preserve">
-    <value>from</value>
-    <comment>From - word.</comment>
-  </data>
-  <data name="moved" xml:space="preserve">
-    <value>moved</value>
-    <comment>Moved - word.</comment>
-  </data>
-  <data name="Filtered" xml:space="preserve">
-    <value>Filtered</value>
-    <comment>Filtered - word.</comment>
-  </data>
-  <data name="EndAppInfo" xml:space="preserve">
+  <data name="EndAppInfoMessage" xml:space="preserve">
     <value>To exit the application, press Ctrl + C or Ctrl + break buttons.</value>
     <comment>End app information.</comment>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>to</value>
-    <comment>To - word.</comment>
+  <data name="FileDeleteMessage" xml:space="preserve">
+    <value>File {0} is deleted from {1} directory.</value>
+    <comment>Message with info about delete file.</comment>
   </data>
-  <data name="ExistFileInfo" xml:space="preserve">
-    <value>File with the same name already exist in filtered directory.</value>
+  <data name="FileCreatedMessage" xml:space="preserve">
+    <value>File {0} is created in {1} directory.</value>
+    <comment>Message with info about created file in watcher directory.</comment>
+  </data>
+  <data name="FileFilteredMessage" xml:space="preserve">
+    <value>File {0} filtered to {1} directory.</value>
+    <comment>Message with info about filtered file.</comment>
+  </data>
+  <data name="ExistFileInfoMessage" xml:space="preserve">
+    <value>File {0} already exist in {1} directory.</value>
     <comment>Message about exist file with the same name in directory.</comment>
   </data>
 </root>
