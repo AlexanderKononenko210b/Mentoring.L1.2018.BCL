@@ -106,6 +106,13 @@ namespace ConsoleWatcher.Services
                     }
                     else
                     {
+                        var newDirectory = Path.GetDirectoryName(newFilePath);
+
+                        if (!Directory.Exists(newDirectory))
+                        {
+                            Directory.CreateDirectory(newDirectory);
+                        }
+
                         File.Move(oldFilePath, newFilePath);
                     }
 
