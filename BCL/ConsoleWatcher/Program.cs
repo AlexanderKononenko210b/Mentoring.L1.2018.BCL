@@ -55,14 +55,6 @@ namespace ConsoleWatcher
                     Directory.CreateDirectory(directory.Path);
                 }
             }
-
-            foreach (RuleElement rule in section.Rules)
-            {
-                if (!Directory.Exists(rule.OutputDirectory))
-                {
-                    Directory.CreateDirectory(rule.OutputDirectory);
-                }
-            }
         }
     }
 }
